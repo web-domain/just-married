@@ -524,7 +524,7 @@ p
 /* COUPLE --------------------------------------------------------------------------------------------------------- */
 .snow-ball
 {
-    background-image: url(../images/lg-screen/couples/snow-ball.png);
+    background-image: url(../images/lg-screen/couple/snow-ball.png);
     background-repeat: repeat;
     width: 100%;
     animation: snow-ball-animation 10s infinite linear;
@@ -542,7 +542,7 @@ p
 }
 #couple .container-fluid
 {
-    background-image: url(../images/lg-screen/couples/background1.jpg);
+    background-image: url(../images/lg-screen/couple/background1.jpg);
 }
 .couple-heading img
 {
@@ -562,7 +562,7 @@ p
 }
 .couple-content .img-couple
 {
-    background-image: url(../images/lg-screen/couples/couples.jpg);
+    background-image: url(../images/lg-screen/couple/couple.jpg);
     background-repeat: no-repeat;
     background-size: 200% 100%; 
     border: 10px solid white;
@@ -832,7 +832,7 @@ p
 }
 #events .img-hall
 {
-    background-image: url(../images/lg-screen/events/hall.jpg);
+    background-image: url(../images/lg-screen/events/halls.jpg);
     background-repeat: no-repeat;
     background-size: 200% 100%;
     border: 6px solid white;
