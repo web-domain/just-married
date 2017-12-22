@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <div class="row heading"> 
+        <div class="col-xs-12"> 
+            <h1>{{ notes.heading }}</h1>
+            <p>{{ notes.sub_heading }}</p>
+        </div> 
+    </div>
+    <div class="row notes-content">
+        <div class="col-xs-12">
+            <div class="stopwatch" ng-repeat="count in stopwatch">
+                <span class="duration">{{ count[1] }}</span>
+                <span class="unit">{{ count[0] }}</span>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="well">
+                <h3>{{ notes.well_heading }}</h3>
+                <p>{{ notes.well_sub_heading }}</p>
+                <span ng-if="guestType === 'bride'">{{ notes.marriage_date }}</span>
+                <span ng-if="guestType === 'groom'">{{ notes.reception_date }}</span>
+            </div>
+        </div>
+    </div>
+</div>

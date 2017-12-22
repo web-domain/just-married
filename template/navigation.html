@@ -1,0 +1,27 @@
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#!/home"> 
+                <span>
+                    <img src="images/favicon.png" alt="logo"/>
+                </span> 
+                <span>just married</span> 
+            </a> 
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation"> 
+                <span class="icon-bar top-bar"></span> 
+                <span class="icon-bar middle-bar"></span> 
+                <span class="icon-bar bottom-bar"></span> 
+            </button> 
+        </div> 
+        <div class="navbar-collapse collapse" id="navigation"> 
+            <ul class="nav navbar-nav navbar-right"> 
+                <li ng-repeat="menu in navMenuItems">
+                    <a id="nav-{{ menu.menuName }}" ng-href="#{{ menu.menuName }}" ng-click="scrollTo(menu.menuName, $event)" ng-class="$index === 0 ? 'navbar-active' : ''">
+                        <i class="{{ menu.icon }}" aria-hidden="true"></i>
+                        {{ menu.menuName }}
+                    </a>
+                </li>
+            </ul> 
+        </div>
+    </div>
+</div>

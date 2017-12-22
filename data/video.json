@@ -1,0 +1,44 @@
+{
+    "video": 
+    {
+        "heading": "video",
+        "sub_heading": "Marriage is the golden ring in a chain whose beginning is a glance and whose ending is Eternity.",
+        "i_text": "In case browser does not support the video format, download the video and play in local media player",
+        "type": 
+        [ 
+            {
+                "heading": "pre-wedding",
+                "sub_heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "link": 
+                [
+                    "https://www.youtube.com/embed/14aBliofm68?rel=0&amp;showinfo=0"
+                ]
+            },
+            {
+                "heading": "wedding",
+                "sub_heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "link":
+                [
+                    "https://www.youtube.com/embed/14aBliofm68?rel=0&amp;showinfo=0"
+                ]
+            }, 
+            {
+                "heading": "reception",
+                "sub_heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "link":
+                [
+                    "https://www.youtube.com/embed/14aBliofm68?rel=0&amp;showinfo=0"    
+                ]
+            }, 
+            {
+                "heading": "cuisine",
+                "sub_heading": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+                "link":
+                [
+                    "https://www.youtube.com/embed/14aBliofm68?rel=0&amp;showinfo=0"
+                ]
+            }   
+        ],
+        "footer_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptate, aliquam possimus, explicabo assumenda, dolore consequatur praesentium iusto odio esse corporis fugiat pariatur a vel."
+    }
+}

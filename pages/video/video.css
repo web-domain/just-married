@@ -1,0 +1,109 @@
+body, header, html, li, ul
+{
+	border: 0;
+	margin: 0;
+	padding: 0 !important;
+}
+body, html
+{
+    font-family: Kitten-Slant, Raleway-Bold, Arial, Helvetica;
+	overflow-x: hidden !important;
+}
+#video
+{
+    background-image: url(../../images/lg-screen/video/background1.jpg);
+}
+.container-fluid
+{
+    background-size: 100% 100%;
+    color: white;
+    min-height: 100vh;
+	padding: 50px 0px 40px;
+	position: relative;
+	width: 100%;
+}
+.heading
+{
+    font-size: 2rem;
+    margin: 0 auto 10px auto;
+    text-align: center;
+    width: 80%;
+}
+h1
+{
+    font-size: 5rem;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.video-content
+{
+    padding: 0px 50px;
+}
+.video-content-container
+{
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    margin-top: 30px;
+    padding: 0px 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.video-content-container p
+{
+    font-size: 1.7rem;
+    margin: 15px auto;
+}
+.video-content-container .carousel-control
+{
+    background-color: transparent;
+    top: 200px;
+    height: 35px;
+    position: absolute;
+    width: 50%;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0, 0, 0, 0)),to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 100%);
+}
+.video-content-container i.fa.fa-arrow-circle-o-left, .video-content-container i.fa.fa-arrow-circle-o-right
+{
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 15px; 
+}
+.video-content-container i.fa.fa-arrow-circle-o-left
+{
+    right: 15px;
+}
+.video-content-container i.fa.fa-arrow-circle-o-right
+{
+    left: 15px;
+}
+.video-content-container iframe
+{
+    height: 200px;
+    width: 90%;
+}
+.video-content-container .pagination
+{
+    bottom: 16px;
+    display: block;
+    font-family: SF-Wonder-Comic, Helvetica, Raleway-Bold, Arial;
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+    position: relative;
+    text-transform: lowercase;
+}
+.video-content .footer-text
+{
+    font-size: 1.7rem;
+    padding: 30px 10% 0px;
+    text-align: center;
+}
+@media (min-width: 768px) 
+{
+    #video-modal .modal-dialog
+    {
+        width: 80%;
+    }
+}

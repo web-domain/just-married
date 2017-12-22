@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="row heading">
+        <div class="col-xs-12">
+            <h1>{{ couple.heading }}</h1>
+            <p>{{ couple.sub_heading }}</p>
+        </div>
+    </div>
+    <div class="row couple-content">
+        <div class="col-xs-12 col-md-6 groom-section">
+            <figure>
+                <div id="img-groom" class="img-couple"></div>
+            </figure>
+            <div class="left-content">
+                <span class="name">{{ couple.groom.name }}</span>
+                <p class="details">{{ couple.groom.details }}</p>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-6 bride-section">
+            <figure>
+                <div id="img-bride" class="img-couple"></div>
+            </figure>
+            <div class="right-content">
+                <span class="name">{{ couple.bride.name }}</span>
+                <p class="details">{{ couple.bride.details }}</p>
+            </div>
+        </div>
+    </div>
+</div>

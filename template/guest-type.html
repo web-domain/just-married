@@ -1,0 +1,13 @@
+<div class="guest-type-container">
+    <figure>
+        <div class="row guest-icon">
+            <div class="col-xs-12 col-sm-6" ng-repeat="icon in guestTypeSelection.icons">
+                <div id="guest-type-{{ $index + 1 }}" ng-click="guestTypeIdentification($index + 1)" class="img-responsive"></div>
+                <figcaption>
+                    <span>{{ icon.caption }}</span>
+                </figcaption>
+            </div>
+        </div>
+        <div class="i_text">{{ guestTypeSelection.i_text }}</div>
+    </figure>
+</div>

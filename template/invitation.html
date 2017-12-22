@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    <div class="row heading">
+        <div class="col-xs-12">
+            <h1>{{ invitation.heading }}</h1>
+            <p>{{ invitation.sub_heading }}</p>
+        </div>
+    </div>
+    <div class="row invitation-content">
+        <div class="col-xs-12 col-md-8">
+            <div class="well">
+                <ul class="nav nav-tabs">
+                    <li  ng-class="{ 'active' : $index === tabIndex }" ng-repeat="tabName in invitation.tab_content">
+                        <a href="#{{ tabName.type }}" data-toggle="tab" ng-click="selectInvitationCard(tabName.type)">{{ tabName.type }} side</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id={{tabContent.type}} class="tab-pane" ng-class="{ 'active' : $index === tabIndex }" ng-repeat="tabContent in invitation.tab_content">
+                        <div class="row name">
+                                <div class="col-xs-12 col-md-3">{{ tabContent.type }}</div>
+                                <div class="col-md-1">
+                                    <span ng-if="windowWidth > 991"> : </span>
+                                    <div ng-if="windowWidth <= 991" class="line"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-8">{{ tabContent.personal_info.name }}</div>
+                            </div>
+                            <div class="row father-name">
+                                <div class="col-xs-12 col-md-3">father</div>
+                                <div class="col-md-1">
+                                    <span ng-if="windowWidth > 991"> : </span>
+                                    <div ng-if="windowWidth <= 991" class="line"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-8">{{ tabContent.personal_info.father_name }}</div>
+                            </div>
+                            <div class="row mother-name">
+                                <div class="col-xs-12 col-md-3">mother</div>
+                                <div class="col-md-1">
+                                    <span ng-if="windowWidth > 991"> : </span>
+                                    <div ng-if="windowWidth <= 991" class="line"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-8">{{ tabContent.personal_info.mother_name }}</div>
+                            </div>
+                            <div class="row sibling-name">
+                                <div class="col-xs-12 col-md-3">sibling</div>
+                                <div class="col-md-1">
+                                    <span ng-if="windowWidth > 991"> : </span>
+                                    <div ng-if="windowWidth <= 991" class="line"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-8" ng-bind-html="tabContent.personal_info.sibling_name"></div>
+                            </div>
+                            <div class="row address">
+                                <div class="col-xs-12 col-md-3">address</div>
+                                <div class="col-md-1">
+                                    <span ng-if="windowWidth > 991"> : </span>
+                                    <div ng-if="windowWidth <= 991" class="line"></div>
+                                </div>
+                                <div class="col-xs-12 col-md-8" ng-bind-html="tabContent.personal_info.address"></div>
+                            </div>
+                            <div class="row message">
+                                <div class="row" ng-repeat="text in tabContent.invitation_message">
+                                    <div class="col-xs-12" ng-bind-html="text"></div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="row" ng-repeat="card in invitationCard">
+                <div id="invitation-card-{{ $index + 1 }}" class="col-xs-12 invitation-cards">
+                    <figure>
+                        <img ng-src="{{ imageFolder + invitationCard[0] }}" class="img-responsive" alt="invitation-card" />
+                        <figcaption>
+                            <a ng-href="{{ imageFolder + invitationCard[0] }}" download>
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img ng-src="{{ imageFolder + invitationCard[1] }}" class="img-responsive" alt="invitation-card" />
+                        <figcaption>
+                            <a ng-href="{{ imageFolder + invitationCard[1] }}" download>
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+                            </a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,518 @@
+{
+    "navMenuItems": 
+    [
+        {
+            "icon": "fa fa-home",
+            "menuName": "home"
+        },
+        {
+            "icon": "fa fa-heart",
+            "menuName": "couple"
+        },
+        {
+            "icon": "fa fa-envelope-open",
+            "menuName": "invitation"
+        },
+        {
+            "icon": "fa fa-calendar-minus-o",
+            "menuName": "events"
+        },
+        {
+            "icon": "fa fa-camera",
+            "menuName": "gallery"
+        },
+        {
+            "icon": "fa fa-film",
+            "menuName": "moments"
+        },
+        {
+            "icon": "fa fa-clipboard",
+            "menuName": "notes"
+        }
+    ],
+    "guestType":
+    {
+        "icons":
+        [
+            {
+                "caption": "groom side" 
+            },
+            {
+                "caption": "bride side"
+            }
+        ],
+        "i_text": "may i know which side you belong to?"
+    },
+    "tray":
+    {
+        "refresh":
+        {
+            "title": "Refresh Page" 
+        },
+        "audio": 
+        {
+            "title": "Audio",
+            "file": ["audio/1.ogg", "audio/1.mp3"]
+        },
+        "video": 
+        {
+            "link": "pages/video/video.html",
+            "title": "Video"
+        }
+    },
+    "home":
+    [
+        {
+            "title": "two souls",
+            "subtitle": "but a single thought"
+        },
+        {
+            "title": "two hearts",
+            "subtitle": "that beat as one"
+        }
+    ],
+    "couple": 
+    {
+        "heading": "happy couple",
+        "sub_heading": "All the words in the world could not even begin to describe how deeply I am in love with you, from the first moment I saw you until the never ending heartbeat you have given me.",
+        "groom": 
+        {
+            "name": "debabrata talukder",
+            "details": "My love, I just want to thank you for being my reason to look forward to the rest of my life."
+        },
+        "bride":
+        {
+            "name": "sarbari halder",
+            "details": "And my love, you know you are my world. Just hold my hand and I will go anywhere with you."    
+        }
+    },
+    "invitation":
+    {
+        "heading": "invitation",
+        "sub_heading": "We invite you to our wedding as we take the next big step in a relationship. We would be grateful for your blessings wholeheartedly and love your presence on the auspicious occasion.",
+        "tab_content":
+        [
+            {
+                "type": "groom",
+                "personal_info":
+                {
+                    "name": "debabrata talukder",
+                    "father_name": "nishit ranjan talukder",
+                    "mother_name": "niyoti talukder",
+                    "sibling_name": "subrata talukder (elder brother), <br/>biswarupa biswas (sister)",
+                    "address": "village - arabinda nagar, P.O. - pundibari, coochbehar - <span class='number'>736165</span>"
+                },
+                "invitation_message": ["together with their families", "debabrata & sarbari", "request your presence at the ceremony and celebration of their reception", "friday, <span class='number'>8</span>th december, <span class='number'>2017</span>"],
+                "card": ["invitation/groom/1.jpg", "invitation/groom/2.jpg"]
+            },
+            {
+                "type": "bride",
+                "personal_info":
+                {
+                    "name": "sarbari halder",
+                    "father_name": "subrata halder",
+                    "mother_name": "sikha halder",
+                    "sibling_name": "saurodip halder (brother)",
+                    "address": "<span class='number'>10/2</span>, biren roy road (east), P.O. - barisha, kolkata - <span class='number'>700008.</span>"
+                },
+                "invitation_message": ["together with their families", "sarbari & debabrata", "request your presence at the ceremony and celebration of their marriage", "monday, <span class='number'>4</span>th december, <span class='number'>2017</span>"],
+                "card": ["invitation/bride/1.jpg", "invitation/bride/2.jpg"]
+            }
+        ]
+    },
+    "events":
+    {
+        "heading": "the wedding events",
+        "sub_heading": "A life of sharing, caring - A love of endless giving together. In celebrating of our love, on these special days we will marry the one, we laugh with, live for and dream about.",
+        "programme": 
+        [
+            {
+                "occation": 
+                {
+                    "type": "marriage ceremony",
+                    "class": "fa fa-diamond"
+                },
+                "description": 
+                {
+                    "desc": "villa: green house",
+                    "class": "fa fa-star"
+                },
+                "date":
+                {
+                    "date" :"<span class='number'>4</span>th december, <span class='number'>2017</span>",
+                    "class": "fa fa-calendar-check-o"
+                },
+                "location": 
+                {
+                    "address": "<span class='number'>2/6</span>A, biren roy road (east) bata colony, behala chowrasta, kolkata - <span class='number'>700008</span>.",
+                    "class": "fa fa-map-marker",
+                    "link": 
+                    {
+                        "label": "route information",
+                        "content":
+                        [
+                            {
+                                "class": "fa fa-map-signs",
+                                "key": "nearest stop",
+                                "value": "behala chowrasta"
+                            },
+                            {
+                                "class": "fa fa-thumb-tack",
+                                "key": "landmark", 
+                                "value": "bata colony, new mahalaxmi bhandar (grocery shop)"
+                            },
+                            {
+                                "class": "fa fa-bus",
+                                "key": "bus",
+                                "value": "from howrah - 12D, 12C/1A <br> from amtala - CTC bus <br> from sealdah - 3A, 235, 21/1 <br> from tollygunge - SD 4/1"
+                            },
+                            {
+                                "class": "fa fa-train",
+                                "key": "train",
+                                "value": "12378 / Padatik Express"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "occation": 
+                {
+                    "type": "reception",
+                    "class": "fa fa-diamond"
+                },
+                "description": 
+                {
+                    "desc": "villa: at own place",
+                    "class": "fa fa-star"
+                },
+                "date":
+                {
+                    "date": "<span class='number'>8</span>th december, <span class='number'>2017</span>",
+                    "class": "fa fa-calendar-check-o"
+                },
+                "location": 
+                {
+                    "address": "village - arabinda nagar, P.O. - pundibari, coochbehar - <span class='number'>736165</span>",
+                    "class": "fa fa-map-marker",
+                    "link": 
+                    {
+                        "label": "route information",
+                        "content":
+                        [
+                            {
+                                "class": "fa fa-map-signs",
+                                "key": "nearest stop",
+                                "value": "uttar banga krishi viswavidyalaya"
+                            },
+                            {
+                                "class": "fa fa-thumb-tack",
+                                "key": "landmark", 
+                                "value": "pundibari police station"
+                            },
+                            {
+                                "class": "fa fa-bus",
+                                "key": "bus",
+                                "value": "coochbehar to pundibari"
+                            },
+                            {
+                                "class": "fa fa-train",
+                                "key": "train",
+                                "value": "13147 / uttar banga express (PT)"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "gallery": 
+    {
+        "heading": "photo gallery",
+        "sub_heading": "With that ring I gave you my heart. I promised from that day forward, you would never walk alone, my heart would be your shelter, and my arms would be your home.",
+        "photos":
+        [
+            "gallery/1.jpg",
+            "gallery/2.jpg",
+            "gallery/3.jpg",
+            "gallery/4.jpg",
+            "gallery/5.jpg",
+            "gallery/6.jpg",
+            "gallery/7.jpg",
+            "gallery/8.jpg",
+            "gallery/9.jpg",
+            "gallery/10.jpg",
+            "gallery/11.jpg",
+            "gallery/12.jpg"
+        ]
+    },
+    "moments": 
+    {
+        "heading": "moments to be cherished",
+        "sub_heading": "This is the start of our sweet little story, the part where your page meets mine - no matter where our tale takes us tomorrow, our story will always spread LOVE.",
+        "buttons": ["pre-wedding", "aiburo bhat", "registry", "haldi", "tatta", "wedding", "reception"],
+        "photos":
+        [
+            [
+                "moments/pre-wedding/1.jpg",
+                "moments/pre-wedding/2.jpg",
+                "moments/pre-wedding/3.jpg",
+                "moments/pre-wedding/4.jpg",
+                "moments/pre-wedding/5.jpg",
+                "moments/pre-wedding/6.jpg",
+                "moments/pre-wedding/7.jpg",
+                "moments/pre-wedding/8.jpg",
+                "moments/pre-wedding/9.jpg",
+                "moments/pre-wedding/10.jpg",
+                "moments/pre-wedding/11.jpg",
+                "moments/pre-wedding/12.jpg",
+                "moments/pre-wedding/13.jpg",
+                "moments/pre-wedding/14.jpg",
+                "moments/pre-wedding/15.jpg",
+                "moments/pre-wedding/16.jpg",
+                "moments/pre-wedding/17.jpg"
+            ],
+            [
+                "moments/aiburo bhat/1.jpg",
+                "moments/aiburo bhat/2.jpg",
+                "moments/aiburo bhat/3.jpg",
+                "moments/aiburo bhat/4.jpg",
+                "moments/aiburo bhat/5.jpg",
+                "moments/aiburo bhat/6.jpg",
+                "moments/aiburo bhat/7.jpg",
+                "moments/aiburo bhat/8.jpg",
+                "moments/aiburo bhat/9.jpg",
+                "moments/aiburo bhat/10.jpg",
+                "moments/aiburo bhat/11.jpg",
+                "moments/aiburo bhat/12.jpg",
+                "moments/aiburo bhat/13.jpg",
+                "moments/aiburo bhat/14.jpg",
+                "moments/aiburo bhat/15.jpg",
+                "moments/aiburo bhat/16.jpg",
+                "moments/aiburo bhat/17.jpg",
+                "moments/aiburo bhat/18.jpg",
+                "moments/aiburo bhat/19.jpg",
+                "moments/aiburo bhat/20.jpg",
+                "moments/aiburo bhat/21.jpg",
+                "moments/aiburo bhat/22.jpg",
+                "moments/aiburo bhat/23.jpg",
+                "moments/aiburo bhat/24.jpg",
+                "moments/aiburo bhat/25.jpg",
+                "moments/aiburo bhat/26.jpg",
+                "moments/aiburo bhat/27.jpg",
+                "moments/aiburo bhat/28.jpg",
+                "moments/aiburo bhat/29.jpg",
+                "moments/aiburo bhat/30.jpg",
+                "moments/aiburo bhat/31.jpg",
+                "moments/aiburo bhat/32.jpg",
+                "moments/aiburo bhat/33.jpg"
+            ],
+            [
+                "moments/registry/1.jpg",
+                "moments/registry/2.jpg",
+                "moments/registry/3.jpg",
+                "moments/registry/4.jpg",
+                "moments/registry/5.jpg",
+                "moments/registry/6.jpg",
+                "moments/registry/7.jpg",
+                "moments/registry/8.jpg",
+                "moments/registry/9.jpg",
+                "moments/registry/10.jpg",
+                "moments/registry/11.jpg",
+                "moments/registry/12.jpg",
+                "moments/registry/13.jpg",
+                "moments/registry/14.jpg",
+                "moments/registry/15.jpg",
+                "moments/registry/16.jpg",
+                "moments/registry/17.jpg",
+                "moments/registry/18.jpg",
+                "moments/registry/19.jpg",
+                "moments/registry/20.jpg",
+                "moments/registry/21.jpg",
+                "moments/registry/22.jpg",
+                "moments/registry/23.jpg",
+                "moments/registry/24.jpg"
+            ],
+            [
+                "moments/haldi/1.jpg",
+                "moments/haldi/2.jpg",
+                "moments/haldi/3.jpg",
+                "moments/haldi/4.jpg",
+                "moments/haldi/5.jpg",
+                "moments/haldi/6.jpg",
+                "moments/haldi/7.jpg",
+                "moments/haldi/8.jpg",
+                "moments/haldi/9.jpg",
+                "moments/haldi/10.jpg",
+                "moments/haldi/11.jpg",
+                "moments/haldi/12.jpg",
+                "moments/haldi/13.jpg",
+                "moments/haldi/14.jpg",
+                "moments/haldi/15.jpg",
+                "moments/haldi/16.jpg",
+                "moments/haldi/17.jpg",
+                "moments/haldi/18.jpg",
+                "moments/haldi/19.jpg",
+                "moments/haldi/20.jpg",
+                "moments/haldi/21.jpg",
+                "moments/haldi/22.jpg",
+                "moments/haldi/23.jpg",
+                "moments/haldi/24.jpg",
+                "moments/haldi/25.jpg",
+                "moments/haldi/26.jpg",
+                "moments/haldi/27.jpg",
+                "moments/haldi/28.jpg",
+                "moments/haldi/29.jpg",
+                "moments/haldi/30.jpg",
+                "moments/haldi/31.jpg",
+                "moments/haldi/32.jpg",
+                "moments/haldi/33.jpg",
+                "moments/haldi/34.jpg",
+                "moments/haldi/35.jpg",
+                "moments/haldi/36.jpg",
+                "moments/haldi/37.jpg",
+                "moments/haldi/38.jpg",
+                "moments/haldi/39.jpg",
+                "moments/haldi/40.jpg",
+                "moments/haldi/41.jpg",
+                "moments/haldi/42.jpg",
+                "moments/haldi/43.jpg",
+                "moments/haldi/44.jpg",
+                "moments/haldi/45.jpg",
+                "moments/haldi/46.jpg",
+                "moments/haldi/47.jpg",
+                "moments/haldi/48.jpg",
+                "moments/haldi/49.jpg",
+                "moments/haldi/50.jpg",
+                "moments/haldi/51.jpg",
+                "moments/haldi/52.jpg",
+                "moments/haldi/53.jpg",
+                "moments/haldi/54.jpg",
+                "moments/haldi/55.jpg"
+            ],
+            [
+                "moments/tatta/1.jpg",
+                "moments/tatta/2.jpg",
+                "moments/tatta/3.jpg",
+                "moments/tatta/4.jpg",
+                "moments/tatta/5.jpg",
+                "moments/tatta/6.jpg",
+                "moments/tatta/7.jpg",
+                "moments/tatta/8.jpg",
+                "moments/tatta/9.jpg",
+                "moments/tatta/10.jpg",
+                "moments/tatta/11.jpg",
+                "moments/tatta/12.jpg",
+                "moments/tatta/13.jpg",
+                "moments/tatta/14.jpg",
+                "moments/tatta/15.jpg",
+                "moments/tatta/16.jpg",
+                "moments/tatta/17.jpg",
+                "moments/tatta/18.jpg"
+            ],
+            [
+                "moments/wedding/1.jpg",
+                "moments/wedding/2.jpg",
+                "moments/wedding/3.jpg",
+                "moments/wedding/4.jpg",
+                "moments/wedding/5.jpg",
+                "moments/wedding/6.jpg",
+                "moments/wedding/7.jpg",
+                "moments/wedding/8.jpg",
+                "moments/wedding/9.jpg",
+                "moments/wedding/10.jpg",
+                "moments/wedding/11.jpg",
+                "moments/wedding/12.jpg",
+                "moments/wedding/13.jpg",
+                "moments/wedding/14.jpg",
+                "moments/wedding/15.jpg",
+                "moments/wedding/16.jpg",
+                "moments/wedding/17.jpg",
+                "moments/wedding/18.jpg",
+                "moments/wedding/19.jpg",
+                "moments/wedding/20.jpg",
+                "moments/wedding/21.jpg",
+                "moments/wedding/22.jpg",
+                "moments/wedding/23.jpg",
+                "moments/wedding/24.jpg",
+                "moments/wedding/25.jpg",
+                "moments/wedding/26.jpg",
+                "moments/wedding/27.jpg",
+                "moments/wedding/28.jpg",
+                "moments/wedding/29.jpg",
+                "moments/wedding/30.jpg",
+                "moments/wedding/31.jpg",
+                "moments/wedding/32.jpg",
+                "moments/wedding/33.jpg",
+                "moments/wedding/34.jpg",
+                "moments/wedding/35.jpg",
+                "moments/wedding/36.jpg",
+                "moments/wedding/37.jpg",
+                "moments/wedding/38.jpg",
+                "moments/wedding/39.jpg",
+                "moments/wedding/40.jpg",
+                "moments/wedding/41.jpg",
+                "moments/wedding/42.jpg",
+                "moments/wedding/43.jpg",
+                "moments/wedding/44.jpg",
+                "moments/wedding/45.jpg",
+                "moments/wedding/46.jpg",
+                "moments/wedding/47.jpg",
+                "moments/wedding/48.jpg",
+                "moments/wedding/49.jpg",
+                "moments/wedding/50.jpg",
+                "moments/wedding/51.jpg",
+                "moments/wedding/52.jpg",
+                "moments/wedding/53.jpg",
+                "moments/wedding/54.jpg",
+                "moments/wedding/55.jpg",
+                "moments/wedding/56.jpg",
+                "moments/wedding/57.jpg",
+                "moments/wedding/58.jpg",
+                "moments/wedding/59.jpg",
+                "moments/wedding/60.jpg",
+                "moments/wedding/61.jpg",
+                "moments/wedding/62.jpg",
+                "moments/wedding/63.jpg",
+                "moments/wedding/64.jpg",
+                "moments/wedding/65.jpg",
+                "moments/wedding/66.jpg"
+            ],
+            [
+                "moments/cuisine/1.jpg",
+                "moments/cuisine/2.jpg",
+                "moments/cuisine/3.jpg",
+                "moments/cuisine/4.jpg",
+                "moments/cuisine/5.jpg",
+                "moments/cuisine/6.jpg",
+                "moments/cuisine/7.jpg",
+                "moments/cuisine/8.jpg",
+                "moments/cuisine/9.jpg",
+                "moments/cuisine/10.jpg",
+                "moments/cuisine/11.jpg",
+                "moments/cuisine/12.jpg"
+            ]
+        ]
+    },
+    "notes": 
+    {
+        "pre_event_message":
+        {
+            "heading": "don't miss it!",
+            "sub_heading": "After months of anticipation, the day is finally arriving! All of our guests are invited to this exciting event and spend this incredible day with us.",
+            "well_heading": "we are eagerly waiting to see you",
+            "well_sub_heading": "From both the Halder and Talukder families, we would like to formally welcome you and thank you from the bottom of our heart for making the day so special.",
+            "marriage_date": "04-12-2017",
+            "reception_date": "08-12-2017"
+        },
+        "post_event_message":
+        {
+            "heading": "thank you so much!",
+            "sub_heading": "As our new life starts as husband and wife, we would like to say thank you for your presence and generosity. Thank you for supporting us and sharing in our love for each other.",
+            "well_heading": "You bought joy to our day",
+            "well_sub_heading": "Thank you for being a part of our wonderful day. Your presence meant a lot to us and we were so happy that you could be with us to celebrate the first day of the rest of our lives together.",
+            "marriage_date": "04-12-2017",
+            "reception_date": "08-12-2017"
+        }
+    }
+}

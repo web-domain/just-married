@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Just Married</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16" />
+
+		<!--CDN LINKS-->
+		<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+		-->
+		<!--LIBRARY LINKS-->
+		
+		<link rel="stylesheet" href="library/Font awesome 4.7.0/library/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="library/Bootstrap 3.3.5/CSS/bootstrap.min.css" />
+		
+		<script type="text/javascript" src="library/jQuery/jQuery.js"></script>
+		<script type="text/javascript" src="library/Bootstrap 3.3.5/JS/bootstrap.min.js"></script>
+		<script type="text/javascript" src="library/AngularJS 1.6.6/angular.min.js"></script>
+		<script type="text/javascript" src="library/AngularJS 1.6.6/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="library/Lodash 4.17.4/lodash 4.17.4.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/template.css" />
+		
+		<script type="text/javascript" src="app/application.js"></script>
+		<script type="text/javascript" src="service/common.service.js"></script>
+		<script type="text/javascript" src="controller/controller.js"></script>
+		<script type="text/javascript" src="js/directive.js"></script>
+	</head>
+
+	<body ng-app="application">
+		<div class="wrapper" ng-controller="wrapperController">
+			<div id="preloader-wrapper" ng-controller="preloaderController">
+				<ng-preloader></ng-preloader>
+			</div>
+			<header>
+				<nav ng-controller="navigationController">
+					<ng-navigation></ng-navigation>
+				</nav>
+			</header>
+			<main>
+				<article>
+					<div id="guest-type" ng-controller="guestTypeController">
+						<ng-guest-type></ng-guest-type>
+					</div>
+					<div id="icon-tray" ng-controller="iconTrayController">
+						<ng-icon-tray></ng-icon-tray>
+					</div>
+					<section id="home" ng-controller="homeController">
+						<ng-home></ng-home>
+					</section>
+					<section id="couple" ng-controller="coupleController">
+						<ng-snow-falls></ng-snow-falls>
+						<ng-couple></ng-couple>
+					</section>
+					<section id="invitation" ng-controller="invitationController">
+						<ng-invitation></ng-invitation>
+					</section>
+					<section id="events" ng-controller="eventsController">
+						<ng-events></ng-events>
+					</section>
+					<section id="gallery" ng-controller="galleryController">
+						<ng-gallery ng-if="isPreloadStarted"></ng-gallery>
+					</section>
+					<section id="moments" ng-controller="momentsController">
+						<ng-moments ng-if="isPreloadStarted"></ng-moments>
+					</section>
+					<section id="notes" ng-controller="notesController">
+						<ng-countdown></ng-countdown>
+						<ng-notes></ng-notes>
+					</section>
+				</article>
+			</main>	
+		</div>
+	</body>
+</html>

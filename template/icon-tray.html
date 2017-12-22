@@ -1,0 +1,19 @@
+<div id="main-tray-icon" class="img-responsive" ng-click="onClickTrayIcon();"></div>
+<div class="tray-container">
+    <div class="refresh-container tray-icon">
+        <div title="{{ iconTray.refresh.title }}" class="img-responsive" ng-click="onPageRefresh();"></div>    
+    </div>
+    <div class="audio-container tray-icon">
+        <div title="{{ iconTray.audio.title }}" class="img-responsive" ng-class="isDisableAudio ? 'disable-audio' : ''" ng-click="checkEnableAudio();"></div>
+        <audio id="audio-element" autoplay>
+            <source type="audio/ogg" ng-src="{{ iconTray.audio.file[0] }}">
+            <source type="audio/mpeg" ng-src="{{ iconTray.audio.file[1] }}">
+            Browser does not support the audio tag.
+        </audio>
+    </div>
+    <div class="video-container tray-icon">
+        <!--<div title="{{ iconTray.video.title }}" class="img-responsive">
+            <a ng-href="{{ iconTray.video.link }}" target="_blank"></a>
+        </div>-->
+    </div>
+</div>

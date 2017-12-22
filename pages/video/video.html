@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Just Married</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="icon" href="../../images/favicon.png" type="image/gif" sizes="16x16" />
+
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->  
+		<link rel="stylesheet" href="../../library/Font awesome 4.7.0/library/css/font-awesome.min.css" />
+		<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+		<link rel="stylesheet" href="../../library/Bootstrap 3.3.5/CSS/bootstrap.min.css" />
+		
+        <link rel="stylesheet" type="text/css" href="../../css/fontface.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/template.css" />
+        <link rel="stylesheet" type="text/css" href="../../pages/video/video.css" />
+        
+		<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+		<script type="text/javascript" src="../../library/jQuery/jQuery.js"></script>
+		<!--<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+		<script type="text/javascript" src="../../library/Bootstrap 3.3.5/JS/bootstrap.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>-->
+        <script type="text/javascript" src="../../library/AngularJS 1.6.6/angular.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-sanitize.js"></script>-->
+		<script type="text/javascript" src="../../library/AngularJS 1.6.6/angular-sanitize.min.js"></script>
+		<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>-->
+		<script type="text/javascript" src="../../library/Lodash 4.17.4/lodash 4.17.4.js"></script>
+		
+        <script type="text/javascript" src="../../app/application.js"></script>
+
+        <!--JS: Controller-->
+        <script type="text/javascript" src="../../controller/controller.js"></script>
+        <script type="text/javascript" src="../../controller/video.controller.js"></script>
+        
+        <!--JS: Directive-->
+		<script type="text/javascript" src="../../js/directive.js"></script>
+		
+        <!--JS: Service-->
+		<script type="text/javascript" src="../../service/common.service.js"></script>        
+    </head>
+    <body ng-app="application">
+        <header>
+            <!-- PRELOADER -->
+            <div id="preloader-wrapper" ng-controller="preloaderController">
+                <ng-preloader></ng-preloader>
+            </div>
+        </header>
+        <main>
+            <!-- VIDEO CONTAINER -->
+            <div ng-controller="videoController">
+                <div id="video" class="container-fluid">
+                    <div class="row heading">
+                        <div class="col-xs-12">
+                            <h1>{{ video.heading }}</h1>
+                            <p>{{ video.sub_heading }}</p>
+                        </div>
+                    </div>
+                    <div class="row video-content">
+                        <div class="row">
+                            <div ng-repeat="clip in video.type">
+                                <div class="col-sm-6 col-md-3 video-content-wrapper">
+                                    <div class="video-content-container">
+                                        <h3>{{ clip.heading }}</h3>
+                                        <p>{{ clip.sub_heading }}</p>
+                                        <div class="row">
+                                            <div id="video-image-carousel-{{ $index + 1 }}" class="carousel slide" data-ride="carousel" data-interval="900000">
+                                                <div class="carousel-inner">
+                                                    <div class="item" ng-repeat="item in clip.link" ng-class="{'active' : $index === 0}">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <iframe ng-src="{{ item | trustAsResourceUrl }}" allowfullscreen></iframe>
+                                                                <span class="pagination">{{ ($index + 1) + ' of ' + clip.link.length }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a class="left carousel-control" href="#video-image-carousel-{{ $index + 1 }}" role="button" data-slide="prev">
+                                                    <i class="fa fa-arrow-circle-o-left" aria-hidden="true" ng-click="pageControl();"></i>
+                                                </a>
+                                                <a class="right carousel-control" href="#video-image-carousel-{{ $index + 1 }}" role="button" data-slide="next">
+                                                    <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 footer-text">
+                                <p>{{ video.footer_text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

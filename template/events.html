@@ -1,0 +1,76 @@
+<div class="container-fluid">
+    <div class="row heading">
+        <div class="col-xs-12">
+            <h1>{{ events.heading }}</h1>
+            <p>{{ events.sub_heading }}</p>
+        </div>
+    </div>
+    <div class="row events-content">
+        <div class="col-xs-12 col-md-6" ng-repeat="item in events.programme">
+            <div class="well">
+                <figure>
+                    <div id="img-hall-{{ $index + 1 }}" class="img-hall"></div>
+                </figure>
+                <div class="events-details">
+                    <div class="row occation">
+                        <div class="col-xs-12 col-sm-1">
+                            <i class="{{ item.occation.class }}" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-11">
+                            <span>{{ item.occation.type }}</span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="row description">
+                        <div class="col-xs-12 col-sm-1">
+                            <i class="{{ item.description.class }}" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-11">
+                            <p>{{ item.description.desc }}</p>
+                        </div>
+                    </div>
+                    <div class="row date">
+                        <div class="col-xs-12 col-sm-1">
+                            <i class="{{ item.date.class }}" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-11">
+                            <span ng-bind-html="item.date.date"></span>
+                        </div>
+                    </div>
+                    <div class="row location">
+                        <div class="col-xs-12 col-sm-1">
+                            <i class="{{ item.location.class }}" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-xs-12 col-sm-11">
+                            <p ng-bind-html="item.location.address"></p>
+                            <button class="btn btn-default" data-target="#events-modal" data-toggle="modal" ng-click="showModal(item.location.link.content)">{{ item.location.link.label }}</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 modal fade" id="events-modal" data-keyboard="false" data-backdrop="static" data-index="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button class="close" data-dismiss="modal">&times;</button>
+                                    <h3>route information</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row" ng-repeat="content in routeInfo">
+                                        <div class="col-xs-12">
+                                            <i class="{{ content.class }}"></i>
+                                        </div>
+                                        <div class="col-xs-12"> 
+                                            <span class="events-modal-key">{{ content.key }}</span>
+                                        </div>
+                                        <div class="col-xs-12"></div>
+                                            <span class="events-modal-value" ng-bind-html="content.value"></span>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
