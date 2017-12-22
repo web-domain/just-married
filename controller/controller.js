@@ -55,7 +55,7 @@ app.controller('navigationController', ['$scope', '$rootScope', '$location', 'co
                     currentLink.removeClass('navbar-active');
                 }
                 
-                if($(document).scrollTop() >= $('#events').outerHeight()) {
+                if($(document).scrollTop() >= $('#invitation').outerHeight()) {
                     $rootScope.isPreloadStarted = true;
                 }
             });
