@@ -1176,7 +1176,7 @@ p
     font-family: SF-Wonder-Comic, Raleway-Bold, Arial, Helvetica;
 }
 @media (max-width: 767px) {
-    #notes .container-fluid
+    #notes
     {
         background-image: url(../images/sm-screen/notes/background1.jpg);
     }
