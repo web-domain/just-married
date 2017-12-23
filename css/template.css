@@ -1179,6 +1179,7 @@ p
     #notes .container-fluid
     {
         background-image: url(../images/sm-screen/notes/background1.jpg);
+        background-attachment: fixed;
     }
 }
 
